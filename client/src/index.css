@@ -1,0 +1,100 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+#main-header {
+  display: flex;
+  background: rgba(255, 255, 255, 0.45);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  position: fixed;
+  width: 100%;
+  top: 0;
+  opacity: 0.89;
+  flex-flow: row;
+  justify-content: center;
+  z-index: 10;
+  font-family: cursive;
+}
+
+#main-header h1 {
+  display: inline-block;
+  color: black;
+}
+
+#main-header img {
+  display: inline-block;
+  height: 100px;
+  width: 100px;
+  margin: 0.5rem;
+}
+
+Form {
+  background: rgba(255, 255, 255, 0.45);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  padding: 2rem;
+  /* color: whitesmoke !important; */
+}
+
+#alert {
+  position: absolute;
+  z-index: 11;
+  width: 100%;
+  top: 20rem;
+}
+
+#formpage {
+  background: url("./formpage_background.jpeg") no-repeat center;
+  background-size: cover;
+  height: 140%;
+  width: 100%;
+  top: 0;
+  position: absolute;
+
+}
+
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+input:-webkit-autofill:active {
+  transition: all 5000s ease-in-out 0s;
+  transition-property: background-color, color;
+}
+
+a {
+  text-decoration: none !important;
+  color: inherit !important;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
+}
